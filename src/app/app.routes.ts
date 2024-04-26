@@ -14,7 +14,7 @@ export const routes: Routes = [
         path: 'cliente-cadastro',
         loadComponent: () => import('./cliente-cadastro/cliente-cadastro.component').then(m => m.ClienteCadastroComponent),
     },
-    /* Rota de equipamentos da assistencia tecnica */
+    /* Rota de equipamentos de clientes da assistencia tecnica */
     {
         path: 'cliente-equipamento',
         loadComponent: () => import('./cliente-equipamento/cliente-equipamento.component').then(m => m.ClienteEquipamentoComponent),

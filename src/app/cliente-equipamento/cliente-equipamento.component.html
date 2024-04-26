@@ -1,26 +1,82 @@
 <div class="p-10 flex-col">
     <h1 class="text-3xl font-bold">
-        Equipamento
+        Equipamentos
     </h1>
 
-    <div class="flex-row">
-        <form class="mt-5 mb-5">
-            <input type="text" placeholder="Identificacao">
+    <div class="flex-col border-2 mt-5 p-5 border-gray-300">
+         <span class="text-2xl mb-5 line-clamp-1">Gerenciamento de equipamentos</span> 
+         <small>Pesquisar por identificador</small>
+         <input type="search">  
+         <button class="bg-red-500 text-white px-3 py-2 rounded-md"
+         routerLink="/cadastro">Pesquisar</button>
+          
+    </div>
+ 
+    <div class="flex-col border-2 mt-5 p-5 border-gray-300">
+        <span class="text-2xl mb-5 line-clamp-1">Resultado</span> 
+        <!-- Generate boilerplate table html here -->
+        <table class="w-full border-2 text-center">
+            <thead>
+                <tr>
+                    <th>Identificador</th>
+                    <th>Data de entrada</th>
+                    <th>Data de saida</th>
+                    <th>Defeito</th>
+                    <th>Observação</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123</td>
+                    <td>00/00/0000</td>
+                    <td>00/00/0000</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>(E) - (D)</td>
+                </tr>
+            </tbody>
+        </table>
+ 
+   </div>
+
+   <div class="flex flex-wrap border-2 mt-5 p-5 border-gray-300">
+
+    <span class="text-2xl mb-5 line-clamp-1">Novo Equipamento</span> 
+        
+    <form class="mt-5 mb-5">
+            <input type="text" placeholder="Identificador">
+            <input type="date" placeholder="Data de entrada">
+            <input type="date" placeholder="Data de saida">
+          
             <input type="text" placeholder="Marca">
             <input type="text" placeholder="Modelo">
             <input type="text" placeholder="Cor">
+           
+            <input type="text" placeholder="Defeito">
+            <input type="text" placeholder="Observação">
+            <input type="text" placeholder="Tec. Responsavel">
+            
+           
+            
+            <label for="fotoEquipamento"> Foto Equipamento </label> <input id="fotoEquipamento" type="file" placeholder="Foto">
+            
 
             <select id="">
-                <option disabled selected>Tipo</option>
+                <option disabled selected>Tipo Equipamento</option>
                 <option value="CEL">Celular</option>
                 <option value="TBL">Tablet</option>
                 <option value="NTB">Notebook</option>
             </select>
         </form>
+
         <!-- 
         <p class="mr-3"> <button class="bg-red-500 text-white px-3 py-2 rounded-md"
                 routerLink="/cadastro">Cadastrar</button> </p> -->
-    </div>
+   
+</div>
+
+ 
 </div>
 
 <p class="mr-3"> <button class="bg-red-500 text-white px-3 py-2 rounded-md"

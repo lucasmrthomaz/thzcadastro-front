@@ -4,22 +4,22 @@
     </h1>
 
     <div class="flex-row">
-        <form class="mt-5 mb-5">
+        <form class="mt-5">
             <input type="text" placeholder="Nome">
             <input type="text" placeholder="Sobrenome">
             <input type="text" placeholder="CPF/RNE">
             <input type="text" placeholder="Email">
+            <input type="text" placeholder="WhatsApp/Cel">
             <select id="">
                 <option disabled selected>Nacionalidade</option>
                 <option value="BRA">Brasileira</option>
                 <option value="RNE">Estrangeira</option>
             </select>
         </form>
-        <!-- 
-        <p class="mr-3"> <button class="bg-red-500 text-white px-3 py-2 rounded-md"
-                routerLink="/cadastro">Cadastrar</button> </p> -->
     </div>
 </div>
+
+<hr>
 
 <div class="p-10 flex-col">
     <h1 class="text-3xl font-bold">
@@ -28,18 +28,18 @@
 
     <div class="flex-row">
         <form class="mt-5 mb-5">
-            <input type="text" placeholder="CEP">
-            <input type="text" placeholder="Endereco (rua, numero)">
-            <input type="text" placeholder="Cidade">
-            <input type="text" placeholder="Estado">
-            <input type="text" placeholder="Bairro">
+            <input type="text" name="cep" placeholder="CEP">
+            <input type="text" name="rua" placeholder="Endereco (rua, numero)">
+            <input type="text" name="bairro" placeholder="Bairro">
+            <input type="text" name="cidade" placeholder="Cidade">
+            <input type="text" name="uf" placeholder="Estado">
         </form>
-        
+
         <!--
         <p class="mr-3"> <button class="bg-red-500 text-white px-3 py-2 rounded-md"
                 routerLink="/cadastro">Cadastrar</button> </p> -->
     </div>
 
     <p class="mr-3"> <button class="bg-red-500 text-white px-3 py-2 rounded-md"
-        routerLink="/cadastro">Cadastrar</button> </p>
+            routerLink="/cadastro">Cadastrar</button> </p>
 </div>
