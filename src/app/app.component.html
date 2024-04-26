@@ -1,9 +1,21 @@
-<header class="h-12 px-3 bg-red-700 text-white flex items-center justify-between"> 
-  <span> <b>{{ title }} </b> </span>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<header class="h-12 px-3 bg-red-700 text-white flex items-center justify-between">
+  <span class="flex"><small> Olá, <b>Lucas Thomaz</b></small></span>
+  <span class="text-xl"> {{ title }} </span>
   <nav>
-      <ul class="flex gap-4">
-          <li routerLink="">Home</li>
-      </ul>
+    <ul class="flex gap-4">
+      <li routerLink="">Dashboard</li>
+      <li routerLink="cliente-cadastro">Clientes</li>
+      <li routerLink="cliente-equipamento">Equipamentos</li>
+      <li routerLink="configuracao">Configurações</li>
+    </ul>
   </nav>
 </header>
 
@@ -11,3 +23,5 @@
   <router-outlet></router-outlet>
 </main>
 
+</body>
+</html>
