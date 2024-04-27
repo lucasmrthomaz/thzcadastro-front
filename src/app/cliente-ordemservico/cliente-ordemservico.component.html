@@ -1,0 +1,44 @@
+<div class="p-10 flex-col">
+    <h1 class="text-3xl font-bold">
+        Ordens de Servico
+    </h1>
+
+    <div class="flex-col border-2 mt-5 p-5 border-gray-300">
+        <span class="text-2xl mb-5 line-clamp-1">Gerenciamento de OS</span>
+        <small>Pesquisar por N* de OS</small>
+        <input type="search">
+        <button class="bg-red-500 text-white px-3 py-2 rounded-md" routerLink="/cadastro">Pesquisar</button>
+    </div>
+
+    <div class="flex-col border-2 mt-5 p-5 border-gray-300">
+        <span class="text-2xl mb-5 line-clamp-1">Nova OS</span>
+
+        <form class="mt-5 mb-5">
+            <input type="text" placeholder="Cliente">
+            <input type="date" placeholder="Data de emissao">
+            <input type="date" placeholder="Ultima alteracao">
+
+            <input type="text" placeholder="Equipamento vinculado">
+            <input type="text" placeholder="Valor">
+            <input type="text" placeholder="Status; Ex: Finalizado">
+
+            <input type="text" placeholder="Observação">
+            <input type="text" placeholder="Tec. Responsavel">
+            <br> <hr>
+            <label for="fotoEquipamento"> Foto 1 </label>
+            <input id="fotoEquipamento1" type="file" placeholder="Foto">
+            <br>
+            <label for="fotoEquipamento2"> Foto 2 </label>
+            <input id="fotoEquipamento2" type="file" placeholder="Foto">
+            <br>
+            <label for="fotoEquipamento3"> Foto 3 </label>
+            <input id="fotoEquipamento3" type="file" placeholder="Foto">
+            <br>
+            
+            <textarea type="text" placeholder="Anotacoes" cols="50" rows="5"></textarea>
+            <hr>
+            <button class="bg-red-500 text-white px-3 py-2 mt-5 rounded-md" routerLink="/cadastro">Concluir</button>
+        </form>
+    </div>
+
+</div>

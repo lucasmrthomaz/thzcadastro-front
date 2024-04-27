@@ -19,6 +19,11 @@ export const routes: Routes = [
         path: 'cliente-equipamento',
         loadComponent: () => import('./cliente-equipamento/cliente-equipamento.component').then(m => m.ClienteEquipamentoComponent),
     },
+     /* Rota de equipamentos de clientes da assistencia tecnica */
+     {
+        path: 'cliente-os',
+        loadComponent: () => import('./cliente-ordemservico/cliente-ordemservico.component').then(m => m.ClienteOrdemServicoComponent),
+    },
 
     /*The path 'configuracao' will load the ConfiguracaoComponent
     PT-BR: A rota 'configuracao' carregará o ConfiguracaoComponent
