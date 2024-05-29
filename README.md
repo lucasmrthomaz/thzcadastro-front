@@ -1,4 +1,8 @@
-# Thzcadastro
+
+# Thzcadastro v1 (formely: SGA - Sistema Gestão Assistência ) 
+![image](https://github.com/lucasmrthomaz/thzcadastro-front/assets/11547508/dce64ad2-4544-413b-b76f-5a697e4d16ad)
+![image](https://github.com/lucasmrthomaz/thzcadastro-front/assets/11547508/57e02f78-b260-4128-a0d1-a3f4e36285c9)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
 
